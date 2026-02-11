@@ -52,7 +52,8 @@ window.T = isSpanish ? {
   register: 'Regístrate',
   summary: 'Ver resumen',
   VOTE_OK: '¡Voto registrado!',
-  apiDetected : 'Clave API detectada desde killbait.com'
+  apiDetected : 'Clave API detectada desde killbait.com',
+  ERR_UNEXPECTED_RESPONSE : "Respuesta inesperada del servidor"
 }
 :
 {
@@ -103,5 +104,6 @@ window.T = isSpanish ? {
   register: "Register",
   summary: 'View summary',
   VOTE_OK: 'Vote recorded!',
-  apiDetected : 'API Key detected from killbait.com'
+  apiDetected : 'API Key detected from killbait.com',
+  ERR_UNEXPECTED_RESPONSE : "Unexpected server response"
   };
