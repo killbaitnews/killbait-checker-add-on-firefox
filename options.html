@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>KillBait Checker Extension</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div>
+      <a href="https://killbait.com" target="_blank">
+        <img
+          id="logo"
+          src="https://killbait.com/assets/images/logo/5.png"
+          alt="KillBait"
+          style="display: block; margin: 0 auto 20px; max-width: 150px"
+        />
+      </a>
+      <h2>KillBait Checker Extension</h2>
+    </div>
+    <div class="options-layout">
+      <div class="left-panel">
+        <h3 id="titleSettings"></h3>
+
+        <div class="form-group">
+          <div class="label-with-link">
+            <label for="apikey" id="lblApi"></label>
+            <span id="apikey-label-text"></span>
+            <a
+              id="registerLink"
+              href="https://killbait.com/auth/login"
+              target="_blank"
+            ></a>
+          </div>
+          <input type="text" id="apikey" placeholder="API Key" />
+        </div>
+
+        <div class="form-group">
+          <label for="language" id="lblLang"></label>
+          <select id="language">
+            <option value="">Auto</option>
+            <option value="es">Español - Spanish</option>
+            <option value="en">English - Inglés</option>
+          </select>
+        </div>
+
+        <button id="save"></button>
+        <div id="statusMessage" class="status-message"></div>
+      </div>
+
+      <div class="right-panel">
+        <h3 id="titleHelp"></h3>
+
+        <div id="faq-container"></div>
+      </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+[
+    {
+      "icon": "🔑",
+      "question": "Where do I get my API Key?",
+      "answer": "<p>If you see a value in the <b>API Key</b> field on the left of this text, you don't need to do anything else: the extension has already obtained this value from your KillBait account.</p><p>If not, to get an API key you need to register with your email or your Google account at <a target='_blank' href='https://killbait.com/auth/register'>this link</a>.</p><p>Once registered and logged in to KillBait, click on your username in the top right corner.</p><p>There you can access your profile data, including your API Key.</p><p>Copy its value and paste it into the <b>API Key</b> field on the left, then click <b>Save Settings</b>.</p>"
+    },
+    {
+      "icon": "🌍",
+      "question": "What is the language selector for?",
+      "answer": "<p>The language selector on the left has three possible values:</p><p><ul><li><b>Auto</b>: Uses your browser language. Currently, only English and Spanish are auto-detected. For other languages, the default is English.</li><li><b>Spanish</b>: Spanish will always be used.</li><li><b>English</b>: English will always be used.</li></ul></p><p>It is important to understand that the <b>selected language is used to check the URL against the KillBait version in that language</b>.</p><p>This means you can submit an article in English, German, or any other language while having Spanish selected, and it will be checked against the Spanish version of KillBait and the summary will be in Spanish.</p><p>Likewise, you can submit an article in Spanish, Russian, or any other language while having English selected, and it will be checked against the English version of KillBait and the summary will be in English.</p><p>This is ideal for getting summaries of news in a language you do not understand.</p>"
+    },
+    {
+      "icon": "🧭",
+      "question": "How do I use this extension?",
+      "answer": "<p>Using the KillBait extension is <b>very simple</b> and requires no technical knowledge.</p><p>When visiting a news article in your browser that you want to analyze, just <b>click the extension button</b> and then select <b>Check Current URL</b>.</p><p>If the article has already been analyzed, you will see the clickbait analysis, the reason for the decision, the option to vote if you think it is clickbait, and access to the AI-generated summary in your selected language.</p><p>If the article has not yet been analyzed, it will appear in the history as 'In Process', and you can check back later to see if it has been analyzed.</p><p>We do not send any notifications about these processes because we do not want the extension to be intrusive.</p><p>Every check—successful, in process, or discarded—is automatically saved in the <b>local history</b>, accessible from the extension.</p><p>The history allows you to <b>review previous analyses</b>, reopen already evaluated articles, and <b>compare results</b> quickly.</p><p>You can <b>clear it completely</b> at any time.</p><p>All actions are performed <b>only on user demand</b> and do not involve background processes running automatically or periodically.</p>"
+    },
+    {
+      "icon": "🗳️",
+      "question": "How can I vote whether a news article is clickbait or not?",
+      "answer": "<p>When you analyze a news article and a <b>clickbait reason</b> is shown, three buttons will appear below the result.</p><p>You can click <b>👎 Is clickbait</b> if you consider the headline or content to be misleading, or <b>👍 Not clickbait</b> if you believe it is not. Your vote will be sent automatically and recorded.</p><p>You can also click <b>📊 View summary</b> to review the article in more detail before voting.</p><p><b>Important:</b> votes on recent news articles (less than 7 days old) are reflected directly in the final decision of whether a news article is clickbait or not.</p><p>For older news articles, votes may take some time to be reflected in the public archive. However, in the <b>extension history</b> you can always check the complete result decided by both the <b>AI</b> and <b>users</b>, regardless of whether the article is recent or old.</p><p>In addition, you can always vote on any news article directly on <a href='https://killbait.com'>killbait.com</a>.</p>"
+    },
+    {
+      "icon": "🔢",
+      "question": "What do the number and colors on the extension icon mean?",
+      "answer": "<p>The number shown on the extension icon indicates how many <b>news items you have submitted today</b> for analysis.</p><p>This counter automatically resets <b>every day</b>, so tomorrow you will start again from zero.</p><p>In addition to the number, the icon changes color to help you quickly see how much availability you have left:</p><p><b>🟢 Green:</b> you have submitted only a few news items and still have plenty available.</p><p><b>🟠 Orange:</b> you are close to the daily limit and have only a few submissions left.</p><p><b>🔴 Red:</b> you have reached the daily submission limit and won’t be able to submit more news until tomorrow.</p><p>This way, you can always quickly know whether you can keep submitting news for analysis without opening the extension.</p><p>The daily limit is dynamic depending on KillBait server load, but it will always be at least 10 checks per day (note: checking the same URL twice counts as two checks).</p>"
+    },        
+    {
+      "icon": "⚡",
+      "question": "Does this extension consume a lot of resources?",
+      "answer": "<p><b>No.</b> The KillBait extension is <b>extremely lightweight</b> and designed not to affect browser performance.</p><p>Simply having it installed <b>does not create any connections to external servers</b> nor performs <b>periodic writes to the browser storage</b>.</p><p>The extension only performs actions when the user interacts with it, such as <b>analyzing a URL</b> or <b>changing settings</b>.</p><p>Even then, operations are <b>occasional and very light</b>, optimized to consume <b>as few resources as possible</b>.</p>"
+    },
+    {
+      "icon": "📰",
+      "question": "What is KillBait?",
+      "answer": "<p><b>KillBait</b> is a <b>news aggregator</b> developed by students and professionals in <b>journalism</b> and <b>web development</b>.</p><p>Our focus is to provide readers with <b>clear, direct, and relevant summaries</b> of each news article.</p><p>Our main innovation is an <b>Artificial Intelligence (AI)</b> system designed to <b>identify clickbait or sensationalist news</b>.</p><p>Instead of simply discarding these articles, our system generates <b>more accurate summaries</b>, <b>free of exaggerations and misleading content</b>, so as <b>not to disappoint the reader</b>.</p><p>To learn more, visit <a href='https://killbait.com/project/what' target='_blank'>this link</a>.</p>"
+    },
+    {
+      "icon": "🤖",
+      "question": "How does KillBait work?",
+      "answer": "<p>The summaries provided by KillBait are generated <b>entirely by Artificial Intelligence (AI)</b> and aim to provide <b>maximum impartiality</b>, avoiding <b>political bias</b>.</p><p>Does this mean the AI is completely free of bias? <b>Not at all</b>.</p><p>However, the summaries remove the <b>editorial lines linked to political ideologies</b> present in many media sources and focus, as objectively as possible, on <b>the facts</b>.</p><p>We encourage you to submit the same article from <b>ideologically opposing sources</b>: by comparing the generated summaries, you will clearly understand what we mean by this approach.</p><p>The AI <b>does not provide absolute truth</b> about news.</p><p>Its purpose is to serve as a <b>synthesis tool</b>, focusing on <b>the relevant facts</b>.</p><p>Additionally, the AI evaluates both the <b>title</b> and the <b>original content</b> of the article to identify potential <b>clickbait or sensationalism</b>, providing a <b>clear explanation</b> of its analysis.</p><p>Its judgment is <b>not definitive</b> in determining whether an article is clickbait.</p><p>The AI only issues an <b>indicative assessment</b>.</p><p>Users can <b>correct this classification</b> by voting, allowing an article considered clickbait by the AI to be reclassified, and vice versa.</p><p>The <b>collective opinion of users</b> always prevails over the AI’s initial decision.</p><p>To learn more, visit <a href='https://killbait.com/project/how' target='_blank'>this link</a>.</p>"
+    },
+    {
+      "icon": "🔗",
+      "question": "Useful links",
+      "answer": "<ul><li><a href='https://killbaitnews.github.io/rssfeeds/en.rss' target='_blank'>RSS</a></li><li><a href='https://killbait.com/project/faq' target='_blank'>Other Frequently Asked Questions</a></li><li><a href='https://killbait.com/api/doc' target='_blank'>API Documentation</a></li><li><a href='https://wordpress.org/plugins/killbait-url-sender/' target='_blank'>WordPress Plugin</a></li><li><a href='https://killbait.com/legal/privacy-policy' target='_blank'>Privacy Policy</a></li></ul><p>Send us your <b>suggestions or feedback</b> at <a href='mailto:info@killbait.com'>info@killbait.com</a></p>"
+    }
+  ]
+  
