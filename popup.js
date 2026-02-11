@@ -19,8 +19,14 @@ btnHistory.addEventListener("click", async () => {
 
 function render(msg, cls = "") {
   result.className = `status ${cls}`;
-  result.innerHTML = msg;
+  result.innerHTML = "";
+  const htmlContainer = document.createElement("span");
+  htmlContainer.innerHTML = window.DOMPurify
+      ? DOMPurify.sanitize(msg)
+      : msg; 
+  result.appendChild(htmlContainer);
 }
+
 
 async function init() {
   const [tab] = await browser.tabs.query({ active: true, currentWindow: true });

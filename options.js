@@ -90,6 +90,8 @@ function renderFaqs(faqs) {
   const container = document.getElementById("faq-container");
   container.innerHTML = "";
 
+  if (!faqs || !faqs.length) return;
+
   const table = document.createElement("div");
   table.className = "faq-table";
 
@@ -100,19 +102,27 @@ function renderFaqs(faqs) {
     const question = document.createElement("button");
     question.type = "button";
     question.className = "faq-question";
-    question.innerHTML = `${faq.icon} ${faq.question}`;
+
+    question.appendChild(document.createTextNode(faq.icon + " "));
+
+    const htmlContainer = document.createElement("span");
+    htmlContainer.innerHTML = window.DOMPurify
+      ? DOMPurify.sanitize(faq.question)
+      : faq.question; 
+    question.appendChild(htmlContainer);
 
     question.addEventListener("click", () => {
       table.querySelectorAll(".faq-row.open").forEach((r) => {
         if (r !== row) r.classList.remove("open");
       });
-
       row.classList.toggle("open");
     });
 
     const answer = document.createElement("div");
     answer.className = "faq-answer";
-    answer.innerHTML = faq.answer;
+    answer.innerHTML = window.DOMPurify
+      ? DOMPurify.sanitize(faq.answer)
+      : faq.answer;
 
     row.appendChild(question);
     row.appendChild(answer);
